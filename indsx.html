@@ -1,0 +1,23 @@
+import hashlib
+def storage():
+	list_p  = [[], [], [], [], []]
+	
+	enter = input("entet the name \n").encode('utf-8')
+	enterd = int(input("enter the The Rate \n"))
+	hash = sum(list(hashlib.sha256(enter).digest())) % 5
+	list_p[hash].append({"name": enter.decode() , "The Rate": enterd } )
+	print(f"{enter.decode()} in list new")
+	
+	hash2 = input("do you want search?")
+	if hash2 in ["yes ", "yse" , "نعم ", "yah", "ya", "y"]:
+		enter_name = input("enter the name").encode('utf-8')
+		hashl = sum(list(hashlib.sha256(enter_name).digest())) % 5
+		for i in list_p[hashl]:
+			print(f"the name is {i["name"]}")
+			print(f"the rate is {i["The Rate"]}")
+	else :
+		print("think you goodbay")
+		
+	
+	
+storage()
