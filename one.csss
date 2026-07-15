@@ -1,0 +1,56 @@
+body{
+    background: linear-gradient(black,blue, black);
+}
+    
+div{
+    background-color: blue;
+    height: 700px;
+    width: 88%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 20px;
+}
+.q{
+    background-color: black;
+    height: 200px;
+    width: 95%;
+    overflow : hidden;
+    border-radius: 40px;
+    
+    }
+.q img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+#cors{
+    text-align: right;
+}
+#iraq{
+    text-align: right;
+}
+
+#web{
+    text-align: right;
+}
+#html{
+    text-align: right;
+}
+#css{
+    text-align: right;
+}
+#log{
+    text-align: right;
+}
+}
+#enter{
+    background: black;
+    border-radius: 20px;
+    color: white;
+    text-align: right;
+   
+}
+
